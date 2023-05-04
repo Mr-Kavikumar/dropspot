@@ -1,9 +1,9 @@
 import  {Text,View} from 'react-native';
 import React from 'react'
-import { NativeWindStyleSheet } from 'nativewind';
+import { useTailwind } from 'nativewind';
 
 export const HomeScreen = () => {
   return (
-      <Text classname='bg-red-800'>HomeScreen</Text>
+      <Text classname='bg-lime-500'>HomeScreen</Text>
   )
 }
