@@ -9,16 +9,12 @@ const Stack = createNativeStackNavigator();
 
 function App() {
   return (
-
-
- <NavigationContainer>
+<NavigationContainer>
 <Stack.Navigator>
 <Stack.Screen name='dropspot' component={HomeScreen} />
 </Stack.Navigator>
 <StatusBar style='auto' /> 
 </NavigationContainer>
-     
-
 );
 }
 
