@@ -1,6 +1,7 @@
-import { Text, StyleSheet, SafeAreaView, Image } from 'react-native';
+import { Text, SafeAreaView, Image } from 'react-native';
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native';
+import { View } from 'react-native';
 
 export const HomeScreen = () => {
   const navigation = useNavigation();
@@ -11,26 +12,32 @@ export const HomeScreen = () => {
   }, []);
   return (
     <SafeAreaView>
-      <Text style={styles.Home}>HomeScreen</Text>
-      <view>
-      <Image 
-          style={styles.image}
-          source={{uri: 'https://links.papareact.com/wru'}}
+      <Text style={{ color: 'blue', }}>HomeScreen</Text>
+      <View style={{
+        display: 'flex',
+        flexDirection: 'row',
+        paddingBottom: 30,
+        alignItems: 'center',
+        marginLeft: 4,
+        backgroundColor: 'red',
+      }}>
+        <Image
+          style={{
+            height: 30,
+            width: 30,
+            backgroundColor: "gray-300",
+            padding: 4,
+            borderRadius: 9999,
+          }}
+          source={{ uri: 'https://links.papareact.com/wru' }}
         />
-      </view>
+        <View style={{paddingLeft:10}}>
+          <Text>Delivery Now!!!</Text>
+          <Text>order Now</Text>
+        </View>
+      </View>
     </SafeAreaView>
   )
- }
+}
 
-const styles = StyleSheet.create({
-  Home: {
-    color: 'blue',
-  },
-  image :{
-  height : 30,
-  width : 30,
-  backgroundColor:"gray-300",
-  padding:4,
-  borderRadius : 9999,
-  }
-}) 
+//beutify key word shift alt F 35: 36
