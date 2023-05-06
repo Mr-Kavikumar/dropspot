@@ -31,6 +31,6 @@ const styles = StyleSheet.create({
   width : 30,
   backgroundColor:"gray-300",
   padding:4,
-  borderRadius : 10
+  borderRadius : 9999,
   }
 }) 
