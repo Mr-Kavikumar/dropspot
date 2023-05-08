@@ -1,7 +1,8 @@
-import { Text, SafeAreaView, Image } from 'react-native';
+import { Text, SafeAreaView, Image, TextInput, ScrollView } from 'react-native';
 import React, { useLayoutEffect } from 'react'
 import { useNavigation } from '@react-navigation/native';
 import { View } from 'react-native';
+import * as Icons from "react-native-heroicons/solid";
 
 export const HomeScreen = () => {
   const navigation = useNavigation();
@@ -11,14 +12,18 @@ export const HomeScreen = () => {
     });
   }, []);
   return (
-    <SafeAreaView>
-      <Text style={{ color: 'blue', }}>HomeScreen</Text> 
+    <SafeAreaView style={{
+      backgroundColor: 'white',
+      paddingTop: 5,
+    }}>
       <View style={{
         display: 'flex',
         flexDirection: 'row',
-        paddingBottom: 30,
+        paddingBottom: 15,
         alignItems: 'center',
         marginLeft: 4,
+        paddingLeft: 10,
+        paddingRight: 10,
       }}>
         <Image
           style={{
@@ -28,20 +33,68 @@ export const HomeScreen = () => {
             padding: 4,
             borderRadius: 9999,
           }}
-          source={{ uri: 'https://links.papareact.com/wru' }}
+          source={require('../assets/images/navbar.webp')}
         />
-        <View style={{paddingLeft:10}}>
-          <Text style={{color : 'gray-400',
-          fontSize: 12 ,
-          lineHeight: 16,
+        <View style={{ paddingLeft: 10, flex: 1 }}>
+          <Text style={{
+            color: 'gray',
+            fontSize: 12,
           }}>Delivery Now!!!</Text>
-          <Text style={{color : 'gray-400',
-          fontSize: 20,
-          lineHeight: 16,
-          fontWeight: 500,
-          }}>Current location</Text>
+          <Text style={{
+            color: 'black',
+            fontSize: 15,
+            fontWeight: 500,
+          }}>CURRENT LOCATION
+            <Icons.ChevronDownIcon style={{
+              color: '#00CCBB',
+              height: 15,
+              width: 30,
+            }} />
+          </Text>
         </View>
+        <Icons.UserIcon style={{
+          height: 30,
+          width: 30,
+          color: '#00CCBB'
+        }}
+        />
       </View>
+      <View style={{
+        display: 'flex',
+        flexDirection: 'row',
+        paddingBottom: 10,
+        paddingLeft: 10,
+        paddingRight: 5,
+        alignItems: 'center'
+      }}>
+        <View
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            padding: 5,
+            backgroundColor: 'gray',
+            flex: 1,
+            borderRadius: 5,
+          }}>
+          <Icons.MagnifyingGlassIcon
+            style={{
+              height: 25,
+              width: 20,
+              paddingRight:10,
+              color: '#00CCBB'
+            }}
+          />
+          <TextInput placeholder='Search for restaurants'
+            keyboardType='default'
+          ></TextInput>
+        </View>
+        <Icons.AdjustmentsVerticalIcon
+          style={{ color: '#00CCBB', paddingLeft: 5, paddingRight: 5 }}
+        />
+      </View>
+      <ScrollView>
+        
+      </ScrollView>
     </SafeAreaView>
   )
 }
