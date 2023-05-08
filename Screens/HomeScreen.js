@@ -12,14 +12,13 @@ export const HomeScreen = () => {
   }, []);
   return (
     <SafeAreaView>
-      <Text style={{ color: 'blue', }}>HomeScreen</Text>
+      <Text style={{ color: 'blue', }}>HomeScreen</Text> 
       <View style={{
         display: 'flex',
         flexDirection: 'row',
         paddingBottom: 30,
         alignItems: 'center',
         marginLeft: 4,
-        backgroundColor: 'red',
       }}>
         <Image
           style={{
@@ -32,8 +31,15 @@ export const HomeScreen = () => {
           source={{ uri: 'https://links.papareact.com/wru' }}
         />
         <View style={{paddingLeft:10}}>
-          <Text>Delivery Now!!!</Text>
-          <Text>order Now</Text>
+          <Text style={{color : 'gray-400',
+          fontSize: 12 ,
+          lineHeight: 16,
+          }}>Delivery Now!!!</Text>
+          <Text style={{color : 'gray-400',
+          fontSize: 20,
+          lineHeight: 16,
+          fontWeight: 500,
+          }}>Current location</Text>
         </View>
       </View>
     </SafeAreaView>
