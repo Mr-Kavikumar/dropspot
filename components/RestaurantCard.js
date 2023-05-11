@@ -17,7 +17,12 @@ const RestaurantCard = (
     }
 ) => {
     return (
-        <TouchableOpacity>
+        <TouchableOpacity 
+        style={{
+            backgroundColor:'gray',
+            marginRight:3,
+
+        }}>
             <Image
             source={{
                 uri: imgurl,
@@ -69,13 +74,13 @@ const RestaurantCard = (
 
             }}>
                 <Icons.MapPinIcon
-                    color={'gray'}
+                    color={'white'}
                     size={15}
-                    opacity={0.4}
+                    opacity={0.6}
                 />
                 <Text 
                  style={{
-                color:'gray',
+                color:'white',
                 fontSize:13
             }}>
                     Nearby . {address}

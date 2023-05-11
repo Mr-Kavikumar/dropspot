@@ -38,11 +38,63 @@ const FeaturedRow = ({ id, title, description }) => {
             contentContainerStyle={{
                 paddingHorizontal:15,
             }}
-            showsHorizontalScrollIndicator={true}
+            showsHorizontalScrollIndicator={false}
             style={{
                 paddingTop:4,
             }}
             >
+            <RestaurantCard
+            id={123}
+            imgurl={'https://accessnow.com/wp-content/uploads/2021/06/pexels-boonkong-boonpeng-1134176-300x300.jpg'}
+            title={'kavikumar'}
+            rating={4.5}
+            genre={'indian'}
+            address={'kuppam,po'}
+            short_description={'This is perfect restaurant'}
+            dishes={[]}
+            long={20}
+            lat={0}
+            >
+            </RestaurantCard>
+            <RestaurantCard
+            id={123}
+            imgurl={'https://accessnow.com/wp-content/uploads/2021/06/pexels-boonkong-boonpeng-1134176-300x300.jpg'}
+            title={'kavikumar'}
+            rating={4.5}
+            genre={'indian'}
+            address={'kuppam,po'}
+            short_description={'This is perfect restaurant'}
+            dishes={[]}
+            long={20}
+            lat={0}
+            >
+            </RestaurantCard>
+            <RestaurantCard
+            id={123}
+            imgurl={'https://accessnow.com/wp-content/uploads/2021/06/pexels-boonkong-boonpeng-1134176-300x300.jpg'}
+            title={'kavikumar'}
+            rating={4.5}
+            genre={'indian'}
+            address={'kuppam,po'}
+            short_description={'This is perfect restaurant'}
+            dishes={[]}
+            long={20}
+            lat={0}
+            >
+            </RestaurantCard>
+            <RestaurantCard
+            id={123}
+            imgurl={'https://accessnow.com/wp-content/uploads/2021/06/pexels-boonkong-boonpeng-1134176-300x300.jpg'}
+            title={'kavikumar'}
+            rating={4.5}
+            genre={'indian'}
+            address={'kuppam,po'}
+            short_description={'This is perfect restaurant'}
+            dishes={[]}
+            long={20}
+            lat={0}
+            >
+            </RestaurantCard>
             <RestaurantCard
             id={123}
             imgurl={'https://accessnow.com/wp-content/uploads/2021/06/pexels-boonkong-boonpeng-1134176-300x300.jpg'}

@@ -14,7 +14,9 @@ export const HomeScreen = () => {
     });
   }, []);
   return (
-    <View>
+    <View style={{
+      backgroundColor:'white'
+    }}>
       <SafeAreaView style={{
         backgroundColor: 'white',
         paddingTop: 5,

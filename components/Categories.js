@@ -9,7 +9,7 @@ const Categories = () => {
       paddingHorizontal:15,
       paddingTop:10,
     }} 
-    horizontal showsHorizontalScrollIndicator={true}>
+    horizontal showsHorizontalScrollIndicator={false}>
     <CategoryCard imgurl={'https://accessnow.com/wp-content/uploads/2021/06/pexels-boonkong-boonpeng-1134176-300x300.jpg'} title={'testing'}>
     </CategoryCard>
     <CategoryCard imgurl={'https://accessnow.com/wp-content/uploads/2021/06/pexels-boonkong-boonpeng-1134176-300x300.jpg'} title={'testing'}>
