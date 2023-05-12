@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["**/*.ts", "**/*.tsx"],
+  "include": ["**/*.ts", "**/*.tsx", "schemas/restaurant.js", "schemas/dish.js", "schemas/category.js", "schemas/schema.js"],
   "exclude": ["node_modules"]
 }
